@@ -1,5 +1,5 @@
 # PDFtoCSV_extract_regesta
-The aim of this the Jupyter notebook is to extract the retro-digitised regesta, for example from the volumes of the Göttinger Papsturkundenwerk, into tabular form and to enable their digital processing as part of the Academy project [Die Formierung Europas durch Überwindung der Spaltung im 12. Jahrhundert](https://formierung-europas.uni-koeln.de/).
+The aim of this Jupyter notebook is to extract the retro-digitised regesta, for example from the volumes of the Göttinger Papsturkundenwerk, into tabular form and to enable their digital processing as part of the Academy project [Die Formierung Europas durch Überwindung der Spaltung im 12. Jahrhundert](https://formierung-europas.uni-koeln.de/).
 
 The script relies on the standardised structure of a printed book page to identify individual parts of a Regest. The Python library PyMuPDF is used to extract each line of text. In a first step, the position of blocks and lines on the page can be visualised in order to manually set the limits for the page regions header, footer, page number, Regestennummer, and date, taking into account whether the page is even or odd.
 
