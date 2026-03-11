@@ -500,7 +500,7 @@ def plot_pagelines(page, df):
         height=700
     )
 
-    fig.show()
+    fig.show(renderer="notebook_connected")
 
 # --- Plot the coordinates of the line corner points
 #       The hover labels show the text of the corresponding line
@@ -564,7 +564,7 @@ def plot_coordinates(df, plottype, save=False):
 #    fig.update_yaxes(autorange='reversed', row=1, col=3)
 
     fig.update_layout(height=600, width=1000, title_text="Coordinates Plot", showlegend=False)
-    fig.show()
+    fig.show(renderer="notebook_connected")
 
     if save:
         fig.write_html(save)
